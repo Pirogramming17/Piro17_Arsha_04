@@ -1,9 +1,7 @@
 /* ALL */
 
-
 @import url(variables.css);
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Poppins:wght@500&display=swap");
-
 
 * {
   font-family: "Jost", sans-serif;
@@ -14,7 +12,6 @@
   width: 85%;
   margin: 0 auto;
 }
-
 
 .flex {
   display: flex;
@@ -503,12 +500,6 @@ textarea.message {
   background: #fff;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
-}
-
 .container-arsha {
   margin-bottom: 30px;
 }
@@ -566,7 +557,16 @@ strong {
   line-height: 1;
 }
 
+.container-arsha {
+  flex-basis: 25%;
+}
+
+.container-links {
+  flex-basis: 25%;
+}
+
 .container-services {
+  flex-basis: 25%;
   margin-bottom: 30px;
 }
 
@@ -579,6 +579,7 @@ strong {
 }
 
 .container-sns {
+  flex-basis: 25%;
   margin-bottom: 30px;
 }
 
