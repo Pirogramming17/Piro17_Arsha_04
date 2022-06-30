@@ -1,6 +1,9 @@
 /* ALL */
+
+
 @import url(variables.css);
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Poppins:wght@500&display=swap");
+
 
 * {
   font-family: "Jost", sans-serif;
@@ -10,6 +13,13 @@
   box-sizing: border-box;
   width: 85%;
   margin: 0 auto;
+}
+
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
 /* 강수경 */
@@ -249,3 +259,358 @@ progress[value]::-webkit-progress-value {
 /* 임채은 */
 
 /* 조석현 */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+  color: #444444;
+}
+
+.info-container {
+  width: 40%;
+  padding: 0 0.5rem;
+}
+
+.info {
+  border-top: 3px solid #47b2e4;
+  border-bottom: 3px solid #47b2e4;
+  padding: 30px;
+
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
+}
+
+#contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #37517e;
+}
+
+#contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6182ba;
+}
+
+.personal-container {
+  width: 56%;
+  padding: 0 0.5rem;
+}
+
+.php-email-form {
+  border-top: 3px solid #47b2e4;
+  border-bottom: 3px solid #47b2e4;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
+}
+
+.php-email-form .flex {
+  justify-content: center;
+}
+
+.name-container {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 0 0.2rem 8px 0.2rem;
+}
+
+.name-container input {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.email-container {
+  width: 45%;
+  margin-bottom: 20px;
+  padding: 0 0.2rem 8px 0.2rem;
+}
+
+.email-container input {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.subject-container {
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+}
+
+.subject-container input {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.message-container {
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+}
+
+textarea {
+  margin: 0em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  padding: 2px;
+}
+
+textarea.message {
+  width: 100%;
+  min-height: calc(1.5em + 0.75rem + 2px);
+}
+
+.process-container {
+  display: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.php-email-form button[type="submit"] {
+  background: #47b2e4;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.personal-container label {
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+#footer {
+  background-color: #37517e;
+}
+
+.footer-newsletter {
+  padding: 50px 0;
+  background: #f3f5fa;
+  text-align: center;
+  font-size: 15px;
+  color: #444444;
+}
+
+.footer-newsletter .flex {
+  justify-content: center;
+}
+
+.news-container {
+  flex-basis: 50%;
+}
+
+.footer-newsletter h4 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  color: #37517e;
+}
+
+.footer-newsletter p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 6%);
+  text-align: left;
+}
+
+.footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+.footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #47b2e4;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
+.footer-top {
+  padding: 60px 0 30px 0;
+  background: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+}
+
+.container-arsha {
+  margin-bottom: 30px;
+}
+
+.container-arsha h3 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #37517e;
+}
+
+.container-arsha p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Jost", sans-serif;
+  color: #5e5e5e;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+.container-links {
+  margin-bottom: 30px;
+}
+
+.container-links h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #37517e;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-top ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-top ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-top a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+.container-services {
+  margin-bottom: 30px;
+}
+
+.container-services h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #37517e;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.container-sns {
+  margin-bottom: 30px;
+}
+
+.container-sns h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #37517e;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.sns-icons {
+  margin-top: 1rem;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  margin: 0 33px;
+}
+
+.copyright {
+  float: left;
+}
+
+.credits {
+  float: right;
+  font-size: 13px;
+}
+
+.credits a {
+  transition: 0.3s;
+  color: #47b2e4;
+}
