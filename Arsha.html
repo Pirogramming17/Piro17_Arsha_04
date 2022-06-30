@@ -126,98 +126,98 @@
       <section></section>
       <section></section>
       <!-- 조석현 CONTACT부터 -->
-      <section id="contact">
-        <div class="container">
-          <div class="section-title">
+      <section>
+        <div class="container contact__container">
+          <div class="contact__title">
             <h2>CONTACT</h2>
-            <p>
+            <p class="contact__p contact__flex-item">
               Magnam dolores commodi suscipit. Necessitatibus eius consequatur
               ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
               quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
               Quia fugiat sit in iste officiis commodi quidem hic quas.
             </p>
-          </div>
-          <div class="flex">
-            <div class="info-container">
-              <div class="info">
-                <div class="address">
-                  <i class="icon-location"></i>
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+          <div class="contact__flex-box">
+            <div class="contact__left contact__flex-item">
+                <div class="contact__info">
+                  <div class="contact__info-detail">
+                    <i class="icon-location"></i>
+                    <h4>Location:</h4>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                  <div class="contact__info-detail">
+                    <i class="icon-email"></i>
+                    <h4>Email:</h4>
+                    <p>info@example.com</p>
+                  </div>
+                  <div class="contact__info-detail">
+                    <i class="icon-call"></i>
+                    <h4>Call:</h4>
+                    <p>+1 5589 55488 55s</p>
+                  </div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                    frameborder="0"
+                    class="contact__info-map"
+                  ></iframe>
                 </div>
-                <div class="email">
-                  <i class="icon-email"></i>
-                  <h4>Email:</h4>
-                  <p>info@example.com</p>
-                </div>
-                <div class="phone">
-                  <i class="icon-call"></i>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
-                </div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                  frameborder="0"
-                  class="map"
-                ></iframe>
-              </div>
             </div>
-            <div class="personal-container">
-              <form action="forms/contact.php" class="php-email-form">
-                <div class="flex">
-                  <div class="name-container">
-                    <label for="name">Your Name</label>
+            <div class="contact__right contact__flex-item">
+                <form action="forms/contact.php" class="contact__form">
+                  <div class="form__flex-box">
+                    <div class="form__left form__flex-item form__group">
+                      <label for="name">Your Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        class="form__control"
+                        id="name"
+                        required
+                      />
+                    </div>
+                    <div class="form__right form__flex-item form__group">
+                      <label for="name">Your Email</label>
+                      <input
+                        type="email"
+                        class="form__control"
+                        name="email"
+                        id="email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form__group">
+                    <label for="name">Subject</label>
                     <input
                       type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
+                      name="subject"
+                      class="form__control"
+                      id="subject"
                       required
                     />
                   </div>
-                  <div class="email-container">
-                    <label for="name">Your Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      required
-                    />
+                  <div class="form__group">
+                      <label for="name">Message</label>
+                      <textarea
+                        name="message"
+                        class="message"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
                   </div>
-                </div>
-                <div class="subject-container">
-                  <label for="name">Subject</label>
-                  <input
-                    type="text"
-                    name="subject"
-                    class="form-control"
-                    id="subject"
-                    required
-                  />
-                </div>
-                <div class="message-container">
-                  <label for="name">Message</label>
-                  <textarea
-                    name="message"
-                    class="message"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                </div>
-                <div class="process-container">
-                  <div class="loading">Loading</div>
-                  <div class="error-message">
-                    Error: Unable to load the "PHP Email Form" Library!
+                  <div class="form__message">
+                    <div class="form__loading">Loading</div>
+                    <div class="form__error">
+                      Error: Unable to load the "PHP Email Form" Library!
+                    </div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
                   </div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
+                  <div class="form__button">
+                    <button type="submit">Send Message</button>
                   </div>
-                </div>
-                <div class="button-container">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
+                </form>
+            </div>
             </div>
           </div>
         </div>
@@ -225,16 +225,16 @@
     </main>
 
     <footer id="footer">
-      <div class="footer-newsletter">
-        <div class="container">
-          <div class="flex">
-            <div class="news-container">
-              <h4>Join Our Newsletter</h4>
-              <p>
+      <div class="footer__newsletter">
+        <div class="container newsletter__container">
+          <div class="newsletter__flex-box">
+            <div class="newsletter__flex-item">
+              <h4 class="newsletter__title">Join Our Newsletter</h4>
+              <p class="newsletter__p">
                 Tamen quem nulla quae legam multos aute sint culpa legam noster
                 magna
               </p>
-              <form action="">
+              <form action="" method="post" class="newsletter__form">
                 <input type="email" name="email" />
                 <input type="submit" value="Subscribe" />
               </form>
@@ -242,12 +242,12 @@
           </div>
         </div>
       </div>
-      <div class="footer-top">
-        <div class="container">
-          <div class="flex">
-            <div class="container-arsha">
+      <div class="footer__top">
+        <div class="container top__container">
+          <div class="top__flex-box">
+            <div class="top__flex-item">
               <h3>ARSHA</h3>
-              <p>
+              <p class="top__address">
                 A108 Adam Street <br />
                 New York, NY 535022<br />
                 United States <br /><br />
@@ -255,7 +255,7 @@
                 <strong>Email:</strong> info@example.com<br />
               </p>
             </div>
-            <div class="container-links">
+            <div class="top__flex-item">
               <h4>Useful Links</h4>
               <ul>
                 <li>
@@ -277,7 +277,7 @@
                 </li>
               </ul>
             </div>
-            <div class="container-services">
+            <div class="top__flex-item">
               <h4>Our Services</h4>
               <ul>
                 <li>
@@ -300,13 +300,13 @@
                 </li>
               </ul>
             </div>
-            <div class="container-sns">
+            <div class="top__flex-item">
               <h4>Our Social Networks</h4>
               <p>
                 Cras fermentum odio eu feugiat lide par naso tierra videa magna
                 derita valies
               </p>
-              <div class="sns-icons">
+              <div class="top__icons">
                 <a href="#" class="twitter"></a>
                 <a href="#" class="facebook"></a>
                 <a href="#" class="instagram"></a>
@@ -317,12 +317,12 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="copyright">
+      <div class="container footer__bottom">
+        <div class="bottom__copyright">
           © Copyright <strong><span>Arsha</span></strong
           >. All Rights Reserved
         </div>
-        <div class="credits">
+        <div class="bottom__credits">
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>

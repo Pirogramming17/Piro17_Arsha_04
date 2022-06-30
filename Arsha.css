@@ -13,12 +13,6 @@
   margin: 0 auto;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  overflow: auto;
-}
-
 /* 강수경 */
 
 /* 박예진 */
@@ -256,21 +250,30 @@ progress[value]::-webkit-progress-value {
 /* 임채은 */
 
 /* 조석현 */
-section {
+.contact__container {
   padding: 60px 0;
-  overflow: hidden;
 }
 
-a {
-  text-decoration: none;
+.contact__flex-box {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.section-title {
+.contact__left.contact__flex-item {
+  width: 39%;
+  align-items: stretch;
+}
+.contact__right.contact__flex-item {
+  width: 56%;
+  align-items: stretch;
+}
+
+.contact__title {
   text-align: center;
   padding-bottom: 30px;
 }
 
-.section-title h2 {
+.contact__title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -280,7 +283,7 @@ a {
   color: #37517e;
 }
 
-.section-title h2::before {
+.contact__title h2::before {
   content: "";
   position: absolute;
   display: block;
@@ -290,8 +293,7 @@ a {
   bottom: 1px;
   left: calc(50% - 60px);
 }
-
-.section-title h2::after {
+.contact__title h2::after {
   content: "";
   position: absolute;
   display: block;
@@ -302,46 +304,47 @@ a {
   left: calc(50% - 20px);
 }
 
-.section-title p {
-  margin-bottom: 0;
-  color: #444444;
+.contact__p {
+  padding: 0px 0px 30px;
 }
 
-.info-container {
-  width: 40%;
+.contact__left {
+  width: 39%;
   padding: 0 0.5rem;
 }
 
-.info {
+.contact__info {
   border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
   padding: 30px;
-
   background: #fff;
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 10%);
 }
 
-#contact .info h4 {
+.contact__info-detail h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #37517e;
 }
-
-#contact .info p {
+.contact__info-detail p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
   color: #6182ba;
 }
 
-.personal-container {
+.contact__info-map {
+  width: 100%;
+}
+
+.contact__right {
   width: 56%;
   padding: 0 0.5rem;
 }
 
-.php-email-form {
+.contact__form {
   border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
   padding: 30px;
@@ -349,91 +352,95 @@ a {
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
 }
 
-.php-email-form .flex {
-  justify-content: center;
+.form__flex-box {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.name-container {
+.form__flex-item {
   width: 45%;
-  margin-bottom: 20px;
-  padding: 0 0.2rem 8px 0.2rem;
 }
 
-.name-container input {
-  padding: 6px 12px;
-  font-size: 14px;
-}
-
-.email-container {
+.form__left {
   width: 45%;
-  margin-bottom: 20px;
-  padding: 0 0.2rem 8px 0.2rem;
+  padding-right: 0.5rem;
 }
 
-.email-container input {
-  padding: 6px 12px;
-  font-size: 14px;
+.form__right {
+  padding-left: 0.5rem;
+  width: 45%;
 }
 
-.subject-container {
+label {
+  float: left;
+}
+
+.form__group {
   margin-bottom: 20px;
   padding-bottom: 8px;
 }
 
-.subject-container input {
+.form__control {
+  height: 44px;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  box-shadow: none;
+  color: #212529;
+  font-size: 14px;
+  border-radius: 4px;
+  display: block;
   width: 100%;
-  padding: 6px 12px;
-  font-size: 14px;
-}
-
-.message-container {
-  margin-bottom: 20px;
-  padding-bottom: 8px;
-}
-
-textarea {
-  margin: 0em;
-  border-width: 1px;
-  border-style: solid;
-  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-image: initial;
-  padding: 2px;
+  padding: 0;
 }
 
 textarea.message {
   width: 100%;
   min-height: calc(1.5em + 0.75rem + 2px);
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+  resize: vertical;
 }
 
-.process-container {
-  display: none;
+.form__message {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.button-container {
+.form__loading {
+  display: none;
+}
+
+.form__error {
+  display: none;
+}
+
+.sent-message {
+  display: none;
+}
+
+.form__button {
   text-align: center;
 }
 
-.php-email-form button[type="submit"] {
+.form__button button[type="submit"] {
   background: #47b2e4;
   border: 0;
   padding: 12px 34px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
-}
-
-.personal-container label {
-  padding-bottom: 8px;
-  display: inline-block;
+  cursor: pointer;
+  text-transform: none;
 }
 
 #footer {
+  font-size: 14px;
   background-color: #37517e;
 }
 
-.footer-newsletter {
+.footer__newsletter {
   padding: 50px 0;
   background: #f3f5fa;
   text-align: center;
@@ -441,15 +448,22 @@ textarea.message {
   color: #444444;
 }
 
-.footer-newsletter .flex {
+.newsletter__container {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.newsletter_flex-box {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.news-container {
+.newsletter__flex-item {
   flex-basis: 50%;
 }
 
-.footer-newsletter h4 {
+.newsletter__title {
   font-size: 24px;
   margin: 0 0 20px 0;
   padding: 0;
@@ -458,12 +472,12 @@ textarea.message {
   color: #37517e;
 }
 
-.footer-newsletter p {
+.newsletter__p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-.footer-newsletter form {
+.newsletter__form {
   margin-top: 30px;
   background: #fff;
   padding: 6px 10px;
@@ -473,13 +487,13 @@ textarea.message {
   text-align: left;
 }
 
-.footer-newsletter form input[type="email"] {
+.newsletter__form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-.footer-newsletter form input[type="submit"] {
+.newsletter__form input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -495,16 +509,26 @@ textarea.message {
   box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
 
-.footer-top {
+.footer__top {
   padding: 60px 0 30px 0;
   background: #fff;
 }
 
-.container-arsha {
-  margin-bottom: 30px;
+.top__container {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
-.container-arsha h3 {
+.top__flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top__flex-item {
+  width: 25%;
+}
+
+.top__flex-item h3 {
   font-size: 28px;
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
@@ -514,7 +538,15 @@ textarea.message {
   color: #37517e;
 }
 
-.container-arsha p {
+.top__flex-item h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #37517e;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.top__flex-item .top__address {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
@@ -522,96 +554,60 @@ textarea.message {
   color: #5e5e5e;
 }
 
-strong {
-  font-weight: bolder;
-}
-
-.container-links {
-  margin-bottom: 30px;
-}
-
-.container-links h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #37517e;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.footer-top ul {
+.top__flex-item ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-top ul li {
+.top__flex-item ul li {
   padding: 10px 0;
   display: flex;
   align-items: center;
 }
 
-.footer-top a {
+.top__flex-item ul li:first-child {
+  padding-top: 0;
+}
+
+.top__flex-item ul a {
   color: #777777;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  text-decoration: none;
 }
 
-.container-arsha {
-  flex-basis: 25%;
+.top__flex-item p {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
 }
 
-.container-links {
-  flex-basis: 25%;
-}
-
-.container-services {
-  flex-basis: 25%;
-  margin-bottom: 30px;
-}
-
-.container-services h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #37517e;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.container-sns {
-  flex-basis: 25%;
-  margin-bottom: 30px;
-}
-
-.container-sns h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #37517e;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.sns-icons {
+.top__icons {
   margin-top: 1rem;
 }
 
-.footer-bottom {
+.footer__bottom {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
-  margin: 0 33px;
 }
 
-.copyright {
+.bottom__copyright {
   float: left;
 }
 
-.credits {
+.bottom__credits {
   float: right;
   font-size: 13px;
 }
 
-.credits a {
+.bottom__credits a {
   transition: 0.3s;
   color: #47b2e4;
+  text-decoration: none;
+  font-size: 13px;
+}
+strong {
+  font-weight: bold;
 }
