@@ -1,9 +1,9 @@
 /* ALL */
 @import url(variables.css);
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Poppins:wght@500&display=swap");
 
 * {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .container {
@@ -28,7 +28,7 @@
 
 .about__flex-item {
   align-items: center;
-  margin-bottom: 30px;
+  margin: 20px 0;
 }
 
 .about__flex-item:nth-child(1) {
@@ -39,16 +39,40 @@
   margin-bottom: 20px;
   padding-bottom: 20px;
   text-align: center;
-  font-size: 33px;
-  font-weight: 900;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
   color: var(--main-title);
+  position: relative;
+}
+
+.main-about__title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.main-about__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
 }
 
 .main-about__left,
 .main-about__right {
   width: 50%;
   min-width: 500px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .main-about__p {
@@ -67,6 +91,7 @@
 .main-about__button {
   border: 2px solid var(--main-color);
   color: var(--main-color);
+  font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 17px;
   border-radius: 4px;
@@ -105,28 +130,28 @@
 .computer__flex-item img {
   width: 520px;
   height: 430px;
-  margin: 0 50px;
+  margin: 0 100px;
 }
 
 .main-computer__title {
-  font-size: 32px;
+  font-size: 34px;
   color: var(--main-title);
   margin-bottom: 20px;
 }
 
 .main-computer__title span {
-  font-weight: 800;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
 }
 
 .main-computer__p {
   color: var(--color);
   line-height: 1.4em;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .main-computer__li span {
   font-size: 18px;
-  font-weight: 800;
   color: var(--main-color);
   display: inline-block;
   margin: 0 5px;
@@ -136,7 +161,8 @@
   margin: 15px 0;
   background: white;
   height: 64px;
-  font-size: 17px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 60px;
   padding-left: 10px;
@@ -166,7 +192,8 @@
 
 .main-volup__title {
   font-size: 32px;
-  font-weight: 900;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
   color: var(--main-title);
   margin-top: 20px;
 }
@@ -174,7 +201,8 @@
 .main-volup__p {
   font-style: italic;
   color: var(--color);
-  margin: 20px 0 25px 0;
+  margin: 15px 0 25px 0;
+  line-height: 1.4em;
 }
 
 .volup__flex-item {
@@ -183,19 +211,19 @@
 }
 
 .volup__flex-item img {
-  width: 630px;
-  height: 380px;
+  width: 640px;
+  height: 390px;
 }
 
 .main-volup__skill {
-  color: #37517e;
+  color: var(--main-title);
   font-weight: 800;
   font-size: 12px;
   float: left;
 }
 
 .main-volup__val {
-  color: #37517e;
+  color: var(--main-title);
   font-weight: 800;
   font-size: 12px;
   float: right;
@@ -213,7 +241,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
-  background-color: var(--main-title);
+  background-color: #4668a2;
 }
 
 /* 임가현 */
