@@ -845,23 +845,29 @@ progress[value]::-webkit-progress-value {
   color: #fff;
 }
 
-.portfolio .portfolio__img-container {
-  position: relative;
+.portfolio__box {
+  display: flex;
 }
 
-.portfolio .portfolio__item {
-  margin-bottom: 30px;
+.portfolio__sort {
+  width: 33%;
+  margin-right: 10px;
 }
 
-.portfolio .portfolio__item .portfolio-img {
+.portfolio__port {
+  width: 400px;
   overflow: hidden;
+  padding: 0px;
 }
 
-.portfolio .portfolio__item .portfolio__img img {
-  transition: all 0.6s;
-  width: 30%;
-  margin-bottom: 30px;
-  padding: 0 12px;
+.portfolio__port img {
+  width: 420px;
+  margin-bottom: 20px;
+}
+
+.portfolio__port img:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
 }
 
 /*--------------------------------------------수경 추가----------------------------------*/
