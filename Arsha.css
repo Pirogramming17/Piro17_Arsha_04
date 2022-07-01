@@ -562,8 +562,114 @@ progress[value]::-webkit-progress-value {
 }
 
 /* 임가현 */
+/* services */
+.services {
+   background-color: #f3f5fa;
+   overflow: hidden;
+}
+
+.services .services__container {
+   padding: 60px 60px;
+   justify-content: center;
+}
+
+.services .services__section-title {
+   text-align: center;
+   padding-bottom: 30px;
+}
+
+.services .services__section-title h2 {
+   font-size: 32px;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+   position: relative;
+   color: #37517e;
+   font-family: "Jost", sans-serif;
+}
+
+.services .services__section-title h2::before {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 120px;
+   height: 1px;
+   background: #ddd;
+   bottom: 1px;
+   left: calc(50% - 60px);
+}
+
+.services .services__section-title h2::after {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 40px;
+   height: 3px;
+   background: #47b2e4;
+   bottom: 0;
+   left: calc(50% - 20px);
+}
+
+.services .services__section-title p {
+   font-size: 1.1rem;
+   font-family: "Open Sans", sans-serif;
+   line-height: 110%;
+}
+
+.services .services__row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.services .services__col-container {
+   display: flex;
+   align-items: stretch;
+   justify-content: space-around;
+   width: 306px;
+   height: 265.3px;
+}
+
+.services .services__icon-box {
+   box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+   padding: 50px 30px;
+   transition: all ease-in-out 0.4s;
+   background: #fff;
+}
+
+.services .services__icon-box .services__icon {
+   margin-bottom: 20px;
+}
+
+.services .services__icon-box .services__icon i {
+   color: #47b2e4;
+   font-size: 36px;
+   transition: 0.3s;
+}
+
+.services .services__icon-box h4 {
+   font-weight: 500;
+   margin-bottom: 15px;
+   font-size: 24px;
+   font-family: "Jost", sans-serif;
+}
+
+.services .services__icon-box h4 a {
+   color: #37517e;
+   transition: ease-in-out 0.3s;
+   text-decoration: none;
+   font-size: 24px;
+}
+
+.services .services__icon-box p {
+   line-height: 24px;
+   font-size: 14px;
+   margin-bottom: 0;
+}
 
 /* 임채은 */
+/* team */
 .team {
    background-color: #f3f5fa;
    overflow: hidden;
@@ -617,8 +723,9 @@ progress[value]::-webkit-progress-value {
 }
 
 .team .team__section-title p {
-   margin-top: 0;
-   margin-bottom: 0;
+   font-size: 1.1rem;
+   font-family: "Open Sans", sans-serif;
+   line-height: 110%;
 }
 
 .team .team__row {
@@ -764,11 +871,9 @@ progress[value]::-webkit-progress-value {
 }
 
 .pricing .pricing__section-title p {
-   display: block;
-   margin-block-start: 1em;
-   margin-block-end: 1em;
-   margin-inline-start: 0px;
-   margin-inline-end: 0px;
+   font-size: 1.1rem;
+   font-family: "Open Sans", sans-serif;
+   line-height: 110%;
 }
 
 .pricing .pricing__container .pricing__row {
@@ -904,11 +1009,9 @@ progress[value]::-webkit-progress-value {
 }
 
 .faq .faq__section-title p {
-   display: block;
-   margin-block-start: 1em;
-   margin-block-end: 1em;
-   margin-inline-start: 0px;
-   margin-inline-end: 0px;
+   font-size: 1.1rem;
+   font-family: "Open Sans", sans-serif;
+   line-height: 110%;
 }
 
 .faq .faq__faq-list {
