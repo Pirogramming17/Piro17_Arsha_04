@@ -1224,15 +1224,6 @@ progress[value]::-webkit-progress-value {
   background-color: #47b2e4;
 }
 
-.contact__info-location:hover {
-  color: #e7f5fb;
-  background-color: #47b2e4;
-}
-.contact__info-email {
-}
-.contact__info-call {
-}
-
 .contact__info-detail {
   text-align: left;
   line-height: 30px;
@@ -1532,6 +1523,13 @@ textarea.message {
   padding-top: 0;
 }
 
+.top__flex-item ul i {
+  padding-right: 2px;
+  color: #47b2e4;
+  font-size: 18px;
+  line-height: 1;
+}
+
 .top__flex-item ul a {
   color: #777777;
   transition: 0.3s;
@@ -1542,6 +1540,10 @@ textarea.message {
   font-size: 14px;
 }
 
+.top__flex-item ul a:hover {
+  color: #47b2e4;
+}
+
 .top__flex-item p {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -1549,6 +1551,27 @@ textarea.message {
 
 .top__icons {
   margin-top: 1rem;
+}
+
+.top__icons a {
+  font-size: 18px;
+  display: inline-block;
+  background: #47b2e4;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 20px;
+  transition: 0.3s;
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+.top__icons a:hover {
+  background-color: #3296c5;
 }
 
 .footer__bottom {
