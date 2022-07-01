@@ -126,6 +126,7 @@ a {
    text-align: center;
    margin-bottom: 2px;
    margin-left: 5px;
+   width: 70px;
 }
 
 .top_bar_btn ul li:nth-child(1) i,
@@ -142,6 +143,7 @@ a {
    background-color: #00a6eb;
    padding: 10px 16px 0 16px;
    height: 40px;
+   width: 146px;
 }
 
 .download i {
