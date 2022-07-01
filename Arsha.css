@@ -226,11 +226,11 @@ a {
 }
 
 .nav_items ol {
-  /*display: none;*/
+  display: none;
   list-style: none;
   padding: 17px;
   margin: 0;
-  width: 94px;
+  width: 83px;
   height: 114px;
   border: 1px solid #aaa;
   background: white;
