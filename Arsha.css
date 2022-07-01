@@ -385,6 +385,7 @@ a {
 
 .about__title {
   margin-bottom: 20px;
+  padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   font-family: "Jost", sans-serif;
@@ -595,6 +596,7 @@ progress[value]::-webkit-progress-value {
 /* SERVICES */
 
 .services {
+  padding-top: 60px;
   background-color: #f3f5fa;
   overflow: hidden;
 }
@@ -859,6 +861,7 @@ progress[value]::-webkit-progress-value {
 /* 임채은 */
 /* team */
 .team {
+  padding-top: 60px;
   background-color: #f3f5fa;
   overflow: hidden;
 }
@@ -1257,6 +1260,10 @@ progress[value]::-webkit-progress-value {
 }
 
 /* 조석현 */
+#contact {
+  padding-top: 60px;
+}
+
 .contact__container {
   padding: 60px 0;
 }
