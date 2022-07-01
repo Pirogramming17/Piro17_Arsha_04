@@ -144,38 +144,41 @@ a {
 }
 
 .download span {
-  color: white;
-  font-size: 0.1rem;
-  line-height: 1rem;
-  margin-left: 5px;
+   color: white;
+   font-size: 0.1rem;
+   line-height: 1rem;
+   margin-left: 5px;
+   font-family: "Malgun Gothic";
+   font-weight: 100;
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 64px;
-  overflow: hidden;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-color: transparent;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   height: 64px;
+   overflow: hidden;
+   left: 0;
+   right: 0;
+   top: 0;
+   background-color: transparent;
+   margin-bottom: 5px;
 }
 
 .nav_container {
-  z-index: 9999;
-  position: fixed;
-  margin-top: 75px;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  padding-right: 15px;
-  padding-left: 50px;
-  padding-top: 5px;
-  padding-bottom: 19px;
-  background-color: #37517e;
+   z-index: 9999;
+   position: fixed;
+   margin-top: 50px;
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: row;
+   padding-right: 15px;
+   padding-left: 50px;
+   padding-top: 0px;
+   padding-bottom: 4px;
+   background-color: #37517e;
 }
 .arsha_logo span {
   color: white;
@@ -211,6 +214,30 @@ a {
 
 .nav_items ul li a:hover {
   color: #47b2e4;
+}
+
+.nav_items:hover ul {
+   display: inline-block;
+}
+
+.rank-title {
+   letter-spacing: 0px;
+   font-size: 1px;
+}
+
+.nav_items ol {
+   display: none;
+   list-style: none;
+   padding: 17px;
+   margin: 0;
+   width: 83px;
+   height: 114px;
+   border: 1px solid #aaa;
+   background: white;
+   position: absolute;
+   top: 35px;
+   right: 89px;
+   z-index: 100;
 }
 
 .get_started_button {
@@ -724,6 +751,104 @@ progress[value]::-webkit-progress-value {
   background: var(--main-color);
   cursor: pointer;
   transition: 0.5s;
+}
+
+/* PORTFOLIO */
+.portfolio {
+   padding: 60px 0;
+   overflow: hidden;
+}
+
+.portfolio .portfolio__container {
+   padding: 60px 60px;
+   justify-content: center;
+}
+
+.portfolio .portfolio__section-title {
+   text-align: center;
+   padding-bottom: 30px;
+}
+
+.portfolio .portfolio__section-title h2 {
+   font-size: 32px;
+   font-weight: bold;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+   position: relative;
+   color: #37517e;
+   font-family: "Jost", sans-serif;
+}
+
+.portfolio .portfolio__section-title h2::before {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 120px;
+   height: 1px;
+   background: #ddd;
+   bottom: 1px;
+   left: calc(50% - 60px);
+}
+
+.portfolio .portfolio__section-title h2::after {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 40px;
+   height: 3px;
+   background: #47b2e4;
+   bottom: 0;
+   left: calc(50% - 20px);
+}
+
+.portfolio .portfolio__section-title p {
+   font-size: 1.1rem;
+   font-family: "Open Sans", sans-serif;
+   line-height: 110%;
+}
+
+.portfolio .portfolio__container ul {
+   list-style: none;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+.portfolio .portfolio__container li {
+   cursor: pointer;
+   display: inline-block;
+   margin: 10px 5px;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 1;
+   color: #444444;
+   transition: all 0.3s;
+   padding: 8px 20px;
+   border-radius: 50px;
+   font-family: "Poppins", sans-serif;
+}
+
+.portfolio .portfolio__container li:hover {
+   background: #47b2e4;
+   color: #fff;
+}
+
+.portfolio .portfolio__img-container {
+   position: relative;
+   height: 1267.13px;
+}
+
+.portfolio .portfolio__item {
+   margin-bottom: 30px;
+}
+
+.portfolio .portfolio__item .portfolio-img {
+   overflow: hidden;
+}
+
+.portfolio .portfolio__item .portfolio__img img {
+   transition: all 0.6s;
 }
 
 /* 임채은 */
