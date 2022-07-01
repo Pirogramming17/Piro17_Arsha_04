@@ -126,6 +126,7 @@ a {
    text-align: center;
    margin-bottom: 2px;
    margin-left: 5px;
+   width: 70px;
 }
 
 .top_bar_btn ul li:nth-child(1) i,
@@ -142,6 +143,7 @@ a {
    background-color: #00a6eb;
    padding: 10px 16px 0 16px;
    height: 40px;
+   width: 146px;
 }
 
 .download i {
@@ -677,6 +679,7 @@ progress[value]::-webkit-progress-value {
    justify-content: space-around;
    width: 306px;
    height: 265.3px;
+   margin-bottom: 40px;
 }
 
 .services .services__icon-box {
@@ -853,7 +856,8 @@ progress[value]::-webkit-progress-value {
    font-family: "Poppins", sans-serif;
 }
 
-.portfolio .portfolio__container li:hover {
+.portfolio .portfolio__container li:hover,
+.portfolio .portfolio__container li:nth-child(1) {
    background: #47b2e4;
    color: #fff;
 }
