@@ -837,6 +837,7 @@ progress[value]::-webkit-progress-value {
 .portfolio .portfolio__img-container {
   position: relative;
   height: 1267.13px;
+  display: flex;
 }
 
 .portfolio .portfolio__item {
