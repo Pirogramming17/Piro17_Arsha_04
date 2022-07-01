@@ -248,6 +248,34 @@ a {
   z-index: 100;
 }
 
+.menu {
+  display: inline-block;
+}
+
+.drop-down {
+  display: none;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 200px;
+  height: 225px;
+  border: 1px solid #eee;
+  border-radius: 2%;
+  background-color: #fff;
+  position: absolute;
+  top: 53px;
+  right: 70px;
+}
+
+.drop-down .drop-down__a {
+  font-size: 14px;
+  color: black !important;
+}
+
+.drop-down li .drop-down__a:hover {
+  color: #47b2e4 !important;
+}
+
 .get_started_button {
   margin-left: 22px;
 
