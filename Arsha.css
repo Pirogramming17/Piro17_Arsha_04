@@ -146,6 +146,13 @@ a {
   width: 146px;
 }
 
+.top_bar_btn ul li a.download:hover {
+  background-color: #00b1fd;
+  padding: 10px 16px 0 16px;
+  height: 40px;
+  width: 146px;
+}
+
 .download i {
   color: white;
   font-size: 24px;
